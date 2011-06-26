@@ -23,7 +23,7 @@ a.button span {
 
 a.button:active {
 	background-position: bottom right;
-	color: #000;
+	color: #000000;
 	outline: none; /* Hide dotted outline in Firefox */
 }
 
