@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+	<head>
+		<title>Custom button</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="imagetoolbar" content="no" />
+		<meta name="Author" content="Xanomorph" />
+		
+		<link href="graphicalButtons.css" rel="stylesheet" type="text/css" media="all" />
+
+		<script type="text/javascript" language="JavaScript1.2" src="jquery.js"></script>
+        <script type="text/javascript" language="JavaScript1.2" charset="utf-8">
+		$(document).ready( function() {
+		
+			$("form a").click(function() {
+				$(this).parents().filter("form").trigger("submit");
+			});
+			
+		});
+		</script>
+        
+	</head>
+  
+	<body>
+  
+		<a class="button" type="submit" href="#" onclick="this.blur(); return false;"><span>Entrer</span></a>
+    
+	</body>
+  
+</html>
