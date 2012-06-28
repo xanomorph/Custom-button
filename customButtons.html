@@ -10,9 +10,8 @@
 		<link href="graphicalButtons.css" rel="stylesheet" type="text/css" media="all" />
 
 		<script type="text/javascript" language="JavaScript1.2" src="jquery.js"></script>
-        <script type="text/javascript" language="JavaScript1.2" charset="utf-8">
+        	<script type="text/javascript" language="JavaScript1.2" charset="utf-8">
 		$(document).ready( function() {
-		
 			$("form a").click(function() {
 				$(this).parents().filter("form").trigger("submit");
 			});
